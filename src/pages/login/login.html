@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="header padding">
+        <img src="assets/img/logo.png">
+    </div>
+    <div class="row row-center loginShadow transparentBack">
+        <div class="col col-center">
+            <ion-list>
+                <ion-item>
+                    <ion-label floating >Username</ion-label>
+                    <ion-input type="text" [(ngModel)] = userName></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password" [(ngModel)] = passWord></ion-input>
+                </ion-item>
+            </ion-list>
+            <ion-checkbox class="transparentBack" ng-model="showPasswordIsChecked">Show password</ion-checkbox>
+            <button class="button button-calm button-outline button-block" ng-click="login()">Login</button>
+            <small>{{errorMessage}}</small>
+        </div>
+    </div>
+</ion-content>

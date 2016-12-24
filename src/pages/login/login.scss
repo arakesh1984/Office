@@ -1,0 +1,13 @@
+.loginShadow {
+    margin: 5px;
+    box-shadow: 1px 2px 9px rgba(2, 2, 2, 0.2);
+    border: 1px solid #ccc;
+    background: #f1f1f1;
+    display: inline-block;
+    z-index: 99;
+    width:100%;
+}
+
+.transparentBack {
+    background-color: transparent !important;
+}
